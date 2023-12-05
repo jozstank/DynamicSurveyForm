@@ -27,6 +27,12 @@ const app = createApp({
       ],
     };
   },
+  computed: {
+    // same as getter in oop js (no need any parameteer and must return something)
+    currentQuestion() {
+      return this.questions[this.currentIndex];
+    },
+  },
   methods: {
     next() {
       this.currentIndex === this.questions.length - 1

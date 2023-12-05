@@ -10,11 +10,11 @@
   <body>
     <div id="app">
       <div class="question">
-        <p class="title">{{questions[currentIndex].title}}</p>
+        <p class="title">{{currentQuestion.title}}</p>
         <input
           type="text"
           placeholder="Enter your answer here"
-          v-model="questions[currentIndex].answer"
+          v-model="currentQuestion.answer"
           ref="answerInput"
         />
       </div>
